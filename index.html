@@ -1,0 +1,57 @@
+<!-- Googleトップページのようなもの
+
+TOP画像を中央寄せに配置　（画像は好きなやつでOK）
+検索ボックスを画面中央に実装
+検索ボックス内に虫眼鏡画像を付与
+検索ボックスを可愛くデザイン（お任せ）
+検索ボックスをクリックすると、おすすめのキーワードがドロップダウンで表示（なんでも良い）
+検索ボックスのドロップダウンで出たキーワードにカーソルを合わせると色がグレーバックになる
+おすすめのキーワードの左に虫眼鏡マークを表示
+検索ボックスの下に検索ボタンを一つ用意してクリックすると、別のページに遷移サンクスページ（なんでも良い）に遷移、ボタンのデザインはお任せ！フォームタグを用意して次のページにデータを送る
+検索ボタンの下におすすめのリンクを10個表示し、上段に5件、下段に5件が表示されていること
+おすすめの検索ボタンには画像とテキスト文言が入っていること
+レスポンシブデザインになっていること
+CSSはコンポーネントを意識したBEMで書かれていること（詳しくは書籍を参考に）
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新しいタブ</title>
+    <style>
+
+      body {
+        background: #35363A;
+        margin: 0;
+        min-width: 960px;
+      }
+    </style>
+</head>
+<body style="background-color: rgb(53, 54, 58);">
+    <header style="border: solid 1px #000000; background-color: #FFFCDB; padding: 8px;">
+        <div class="header-contents" style="text-align: right; padding-right: 4px;">
+            <a class="header-mail" href="#">Mail</a>
+            <a class="header-img" href="#">Img</a>
+            <a class="header-menu" href="#">Menu</a>
+            <a class="header-user" href="#">User</a>
+        </div>  
+    </header>
+
+    <main style="border: solid 1px #000000; background-color: #D5EAD8;">
+        <div id="contents" style="width: 100%; margin: 0 auto; text-align: center;">
+            <div class="main-img"　style="margin-bottom: 38px;">
+                <img class="image" src="image/google.png">
+            </div>
+            <div class="search">
+                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
