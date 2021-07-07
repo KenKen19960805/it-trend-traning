@@ -20,18 +20,14 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
     <title>新しいタブ</title>
-    <style>
-    </style>
 </head>
-<body style="background-color: rgb(53, 54, 58);">
-    <header style="background-color: #FFFCDB; padding: 8px;">
-        <div class="header-contents" style="text-align: right; padding-right: 4px;">
+<body>
+    <header>
+        <div class="header-contents">
             <a class="header-mail" href="#">Mail</a>
             <a class="header-img" href="#">Img</a>
             <a class="header-menu" href="#">Menu</a>
@@ -39,14 +35,14 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
         </div>
     </header>
 
-    <main style="background-color: #D5EAD8; padding: 8px;">
-        <div id="contents" style="text-align: center;">
+    <main>
+        <div class="contents">
             <!-- TOP画像 -->
             <div class="main-img">
-                <img class="image" style="margin-bottom: 38px;" src="image/google.png">
+                <img class="top-img" src="image/google.png">
             </div>
             <!-- 検索ボックス -->
-            <div class="search-box" style="margin-bottom: 16px;">
+            <div class="search-box">
                 <div class="input-wrapper">
                     <form class="search-form" method="post">
                         <button type="submit" class="search-btn">
