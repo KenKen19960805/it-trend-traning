@@ -23,7 +23,34 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <title>新しいタブ</title>
+    <script type="text/javascript">
+        $(function() {
+            var data = [
+                'accepts',
+                'action_name',
+                'add',
+                'add_column',
+                'add_index',
+                'add_timestamps',
+                'after_create',
+                'after_destroy',
+                'after_filter',
+                'all',
+            ];
+            
+            $('.search-input').autocomplete({
+                source: data,
+                autoFocus: true,
+                delay: 300,
+                minLength: 2,
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
