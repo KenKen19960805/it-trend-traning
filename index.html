@@ -28,29 +28,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <title>新しいタブ</title>
-    <script type="text/javascript">
-        $(function() {
-            var data = [
-                'accepts',
-                'action_name',
-                'add',
-                'add_column',
-                'add_index',
-                'add_timestamps',
-                'after_create',
-                'after_destroy',
-                'after_filter',
-                'all',
-            ];
-            
-            $('.search-input').autocomplete({
-                source: data,
-                autoFocus: true,
-                delay: 300,
-                minLength: 2,
-            });
-        });
-    </script>
+    <script type="text/javascript" src="autocomplete.js"></script>
 </head>
 <body>
     <header>
