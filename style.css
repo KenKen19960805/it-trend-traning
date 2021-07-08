@@ -66,3 +66,23 @@ main {
 .input-wrapper .search-btn:hover {
     color:#7fbfff;
 }
+
+/* 検索ボタンのデザイン */
+.input-wrapper .btn-submit {
+    overflow: hidden;
+    padding: 1.5rem 6rem;
+    color: #FFD700;
+    border: solid 3px #FFD700;
+    border-radius: 7px;
+    background: #35363A;
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.input-wrapper .btn-submit:hover {
+    background:#f3eab8;
+    color:#fff;
+}

@@ -19,3 +19,9 @@ $(function() {
         minLength: 1,
     });
 });
+
+$(function() {
+    $(".btn-submit").click(function(){
+        alert("クリックされました");
+    }); 
+});
