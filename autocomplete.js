@@ -1,15 +1,17 @@
 $(function() {
     var data = [
-        'accepts',
-        'action_name',
-        'add',
-        'add_column',
-        'add_index',
-        'add_timestamps',
-        'after_create',
-        'after_destroy',
-        'after_filter',
-        'all',
+        // 'java',
+        // 'ruby',
+        // 'add',
+        // 'python',
+        // 'javascript',
+        // 'php',
+        // 'laravel',
+        // '',
+        // 'after_filter',
+        // 'all',
+        {label: 'youtube', value: 'youtube', mylink: 'https://www.youtube.com/'},
+        {label: 'jojo', value: 'jojo', mylink: 'http://jojo-animation.com/'},
     ];
     
     $('.search-input').autocomplete({
@@ -18,10 +20,9 @@ $(function() {
         delay: 300,
         minLength: 1,
     });
-});
 
-$(function() {
     $(".btn-submit").click(function(){
+        // ここにインスタンスオブジェクトを取得し表示する処理
         alert("クリックされました");
     }); 
 });
