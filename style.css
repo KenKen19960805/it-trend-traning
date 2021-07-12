@@ -25,7 +25,7 @@ main {
 
 .top-img {
     margin-bottom: 38px;
-    width: 30%;
+    display: inline-block;
 }
 
 .search-box {
@@ -85,4 +85,35 @@ main {
 .input-wrapper .btn-submit:hover {
     background:#f3eab8;
     color:#fff;
+}
+
+/* オススメリンク */
+.container {
+    column-count: 5;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.container .tile {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 7px;
+}
+
+.container .tile:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.tile__icon {
+    border-radius: 100%;
+    background-color: rgba(32, 33, 36, 1);
+    height: 60px;
+}
+
+.tile__title {
+    height: 50px;
 }
