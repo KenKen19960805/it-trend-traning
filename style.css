@@ -34,19 +34,16 @@ main {
 
 .search-box {
     margin-bottom: 16px;
-}
-
-.input-wrapper {
     height: 100%;
     position: relative;
 }
 
-.input-wrapper .search-form {
+.search-form {
     position: relative;	
     margin-bottom: 20px;
 }
 
-.input-wrapper .search-input {
+.search-form .search-input {
     height:45px;
     width: 40%;
     padding: 0 10px; 
@@ -57,7 +54,7 @@ main {
     font-size: inherit;
 }
 
-.input-wrapper .search-btn {
+.search-form .search-btn {
     height: 45px;
     position: absolute; 
     background: none;
@@ -67,12 +64,12 @@ main {
     padding-left: 20px;
 }
 
-.input-wrapper .search-btn:hover {
+.search-form .search-btn:hover {
     color:#7fbfff;
 }
 
 /* 検索ボタンのデザイン */
-.input-wrapper .btn-submit {
+.search-form .btn-submit {
     overflow: hidden;
     padding: 1.5rem 6rem;
     color: #FFD700;
@@ -86,7 +83,7 @@ main {
     font-weight: bold;
 }
 
-.input-wrapper .btn-submit:hover {
+.search-form .btn-submit:hover {
     background:#f3eab8;
     color:#fff;
 }
