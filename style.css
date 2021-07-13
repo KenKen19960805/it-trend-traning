@@ -1,11 +1,11 @@
-body {
+.body {
     background: #35363A;
     margin: 0;
     min-width: 960px;
     background-color: rgb(53, 54, 58);
 }
 
-header {
+.header {
     padding: 8px;
 }
 
@@ -19,7 +19,7 @@ header {
     color: #fff;
 }
 
-main {
+.main {
     padding: 8px;
 }
 
