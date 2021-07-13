@@ -6,13 +6,17 @@ body {
 }
 
 header {
-    background-color: #FFFCDB; 
     padding: 8px;
 }
 
 .header-contents {
     text-align: right; 
     padding-right: 4px;
+}
+
+.header-contents .header-contents__icon {
+    text-decoration: none;
+    color: #fff;
 }
 
 main {
@@ -97,23 +101,23 @@ main {
     overflow: hidden;
 }
 
-.container .tile {
+.tile {
     display: block;
     text-decoration: none;
     color:#fff;
     border-radius: 7px;
 }
 
-.container .tile:hover {
+.tile:hover {
     background: rgba(255, 255, 255, .1);
 }
 
-.tile__icon {
+.tile .tile__icon {
     border-radius: 100%;
     background-color: rgba(32, 33, 36, 1);
     height: 60px;
 }
 
-.tile__title {
+.tile .tile__title {
     height: 50px;
 }
