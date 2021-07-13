@@ -30,48 +30,118 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
     <title>新しいタブ</title>
     <script type="text/javascript" src="autocomplete.js"></script>
 </head>
-<body>
-    <header>
+<body class="body">
+    <header class="header">
         <div class="header-contents">
-            <a class="header-mail" href="#">Mail</a>
-            <a class="header-img" href="#">Img</a>
-            <a class="header-menu" href="#">Menu</a>
-            <a class="header-user" href="#">User</a>
+            <a class="header-contents__icon" href="#">Mail</a>
+            <a class="header-contents__icon" href="#">Img</a>
+            <a class="header-contents__icon" href="#">Menu</a>
+            <a class="header-contents__icon" href="#">User</a>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <div class="contents">
             <!-- TOP画像 -->
             <div class="main-img">
-                <img class="top-img" src="image/google.png">
+                <a class="top-img" href="#">
+                    <img src="image/google.png" alt="お馴染みのやつ" width="272" height="92" loading="lazy">
+                </a>
             </div>
             <!-- 検索ボックス -->
             <div class="search-box">
-                <div class="input-wrapper">
-                    <form class="search-form" method="post">
-                        <button type="submit" class="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                        <input class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
-                        <a class="btn-submit" href="javascript:void(0);">
-                            <span>こっちを見ろー！</span>
-                        </a>
-                    </form>
-                </div>  
+                <form class="search-form" method="post">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <input class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
+                    <a class="btn-submit" href="javascript:void(0);">
+                        <span>こっちを見ろー！</span>
+                    </a>
+                </form>  
             </div>
             <!-- オススメリンク10個表示 -->
             <div class="container">
-                <a class="tile" title="it-trend" href="https://it-trend.jp/"></a>
-                <a class="tile" title="list-finder" href="https://promote.list-finder.jp/"></a>
-                <a class="tile" title="sales-doc" href="https://promote.sales-doc.com/lp/01/"></a>
-                <a class="tile" title="biz-play" href="https://biz-play.com/"></a>
-                <a class="tile" title="innovation" href="https://www.innovation.co.jp/"></a>
-                <a class="tile" title="youtube" href="https://www.youtube.com/"></a>
-                <a class="tile" title="twitter" href="https://twitter.com/?lang=ja"></a>
-                <a class="tile" title="facebook" href="https://ja-jp.facebook.com/"></a>
-                <a class="tile" title="instagram" href="https://www.instagram.com/?hl=ja"></a>
-                <a class="tile" title="line" href="https://line.me/ja/"></a>
+                <a class="tile" title="it-trend" href="https://it-trend.jp/">
+                    <div class="tile__icon">
+                        <img src="image/it-trend_24_24.png" alt="ITトレンド" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>ITトレンド</span>
+                    </div>
+                </a>
+                <a class="tile" title="list-finder" href="https://promote.list-finder.jp/">
+                    <div class="tile__icon">
+                        <img src="image/list-finder_24_24.png" alt="list-finder" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>List Finder</span>
+                    </div>
+                </a>
+                <a class="tile" title="sales-doc" href="https://promote.sales-doc.com/lp/01/">
+                    <div class="tile__icon">
+                        <img src="image/sales-doc_24_24.png" alt="sales-doc" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Sales Doc</span>
+                    </div>
+                </a>
+                <a class="tile" title="biz-play" href="https://biz-play.com/">
+                    <div class="tile__icon">
+                        <img src="image/biz-play_24_24.png" alt="biz-play" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>bizplay</span>
+                    </div>
+                </a>
+                <a class="tile" title="innovation" href="https://www.innovation.co.jp/">
+                    <div class="tile__icon">
+                        <img src="image/innovation_24_24.png" alt="Innovation" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Innovation</span>
+                    </div>
+                </a>
+                <a class="tile" title="youtube" href="https://www.youtube.com/">
+                    <div class="tile__icon">
+                        <img src="image/youtube_24_24.png" alt="youtube" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Youtube</span>
+                    </div>
+                </a>
+                <a class="tile" title="twitter" href="https://twitter.com/?lang=ja">
+                    <div class="tile__icon">
+                        <img src="image/twitter_24_24.png" alt="twitter" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Twitter</span>
+                    </div>
+                </a>
+                <a class="tile" title="facebook" href="https://ja-jp.facebook.com/">
+                    <div class="tile__icon">
+                        <img src="image/facebook_24_24.png" alt="facebook" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Facebook</span>
+                    </div>
+                </a>
+                <a class="tile" title="instagram" href="https://www.instagram.com/?hl=ja">
+                    <div class="tile__icon">
+                        <img src="image/instagram_24_24.png" alt="instagram" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>Instagram</span>
+                    </div>
+                </a>
+                <a class="tile" title="line" href="https://line.me/ja/">
+                    <div class="tile__icon">
+                        <img src="image/line_24_24.png" alt="line" width="24" height="24" loading="lazy">
+                    </div>
+                    <div class="tile__title">
+                        <span>LINE</span>
+                    </div>
+                </a>
             </div>
 
         </div>

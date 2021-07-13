@@ -1,12 +1,11 @@
-body {
+.body {
     background: #35363A;
     margin: 0;
     min-width: 960px;
     background-color: rgb(53, 54, 58);
 }
 
-header {
-    background-color: #FFFCDB; 
+.header {
     padding: 8px;
 }
 
@@ -15,7 +14,12 @@ header {
     padding-right: 4px;
 }
 
-main {
+.header-contents .header-contents__icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
     padding: 8px;
 }
 
@@ -25,24 +29,21 @@ main {
 
 .top-img {
     margin-bottom: 38px;
-    width: 30%;
+    display: inline-block;
 }
 
 .search-box {
     margin-bottom: 16px;
-}
-
-.input-wrapper {
     height: 100%;
     position: relative;
 }
 
-.input-wrapper .search-form {
+.search-form {
     position: relative;	
     margin-bottom: 20px;
 }
 
-.input-wrapper .search-input {
+.search-form .search-input {
     height:45px;
     width: 40%;
     padding: 0 10px; 
@@ -53,7 +54,7 @@ main {
     font-size: inherit;
 }
 
-.input-wrapper .search-btn {
+.search-form .search-btn {
     height: 45px;
     position: absolute; 
     background: none;
@@ -63,12 +64,12 @@ main {
     padding-left: 20px;
 }
 
-.input-wrapper .search-btn:hover {
+.search-form .search-btn:hover {
     color:#7fbfff;
 }
 
 /* 検索ボタンのデザイン */
-.input-wrapper .btn-submit {
+.search-form .btn-submit {
     overflow: hidden;
     padding: 1.5rem 6rem;
     color: #FFD700;
@@ -82,7 +83,38 @@ main {
     font-weight: bold;
 }
 
-.input-wrapper .btn-submit:hover {
+.search-form .btn-submit:hover {
     background:#f3eab8;
     color:#fff;
+}
+
+/* オススメリンク */
+.container {
+    column-count: 5;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.tile {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 7px;
+}
+
+.tile:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.tile .tile__icon {
+    border-radius: 100%;
+    background-color: rgba(32, 33, 36, 1);
+    height: 60px;
+}
+
+.tile .tile__title {
+    height: 50px;
 }
