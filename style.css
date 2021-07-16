@@ -117,9 +117,15 @@
     height: 48px;
     width: 48px;
     display: inline-block;
+    margin: 10% auto;
 }
 
 .tile .tile__title {
     font-size: 14px;
     overflow: hidden;
+    margin: 5% auto;
+}
+
+.tile .tile__icon .tile__icon__img {
+    margin: 25% auto;
 }
