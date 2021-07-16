@@ -37,15 +37,12 @@ $(function() {
         },
     ];
     
-    $('.search-input').autocomplete({
+    $('#search-input').autocomplete({
+        // autocompleteを表示し、選択されたvalueのmylinkを、$('#btn-submit')のhrefリンクに置き換える
         source: data,
         select: function(event, ui) {
-            location.href = ui.item.mylink;
-            return false;
+            $('#btn-submit').attr("href", (ui.item.mylink));
+            return true;
         }
-    });
-
-    $(".btn-submit").click(function(){
-        // ここにインスタンスオブジェクトを取得し表示する処理
-    });
+    })
 });

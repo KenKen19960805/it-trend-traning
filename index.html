@@ -54,8 +54,8 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                     <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i>
                     </button>
-                    <input class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
-                    <a class="btn-submit" href="javascript:void(0);">
+                    <input id="search-input" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
+                    <a id="btn-submit" class="btn-submit" href="javascript:void(0);">
                         <span>こっちを見ろー！</span>
                     </a>
                 </form>  
@@ -64,7 +64,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
             <div class="container">
                 <a class="tile" title="it-trend" href="https://it-trend.jp/">
                     <div class="tile__icon">
-                        <img src="image/it-trend_24_24.png" alt="ITトレンド" width="24" height="24" loading="lazy">
+                        <img class="tile" src="image/it-trend_24_24.png" alt="ITトレンド" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>ITトレンド</span>
