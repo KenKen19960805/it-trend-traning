@@ -1,5 +1,5 @@
 $(function() {
-    var datas = [
+    var data = [
         {
             label: 'youtube', 
             value: 'youtube', 
@@ -38,8 +38,8 @@ $(function() {
     ];
     
     $('#search-input').autocomplete({
-        // autocompleteを表示し、選択されたvalueのmylinkを、$('#btn-submit')の
-        source: datas,
+        // autocompleteを表示し、選択されたvalueのmylinkを、$('#btn-submit')のhrefリンクに置き換える
+        source: data,
         select: function(event, ui) {
             $('#btn-submit').attr("href", (ui.item.mylink));
             return true;
