@@ -43,19 +43,19 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
     <main class="main">
         <div class="contents">
             <!-- TOP画像 -->
-            <div class="main-img">
-                <a class="top-img" href="#">
-                    <img src="image/google_512_168.png" alt="お馴染みのやつ" width="272" height="92" loading="lazy">
+            <div class="top-img">
+                <a class="top-img__area" href="#">
+                    <img class="top-img__area__img" src="image/google_512_168.png" alt="お馴染みのやつ" width="272" height="92" loading="lazy">
                 </a>
             </div>
             <!-- 検索ボックス -->
             <div class="search-box">
                 <form class="search-form" method="post">
-                    <button type="submit" class="search-btn">
+                    <button type="submit" class="search-form__btn">
                         <i class="fas fa-search"></i>
                     </button>
-                    <input id="search-input" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
-                    <a id="btn-submit" class="btn-submit" href="javascript:void(0);">
+                    <input id="search-form__input" class="search-form__input" type="search" autocomplete="off" spellcheck="false" placeholder="Google で検索またはURLを入力">
+                    <a id="search-form__submit" class="search-form__submit" href="javascript:void(0);">
                         <span>こっちを見ろー！</span>
                     </a>
                 </form>  
@@ -64,7 +64,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
             <div class="container">
                 <a class="tile" title="it-trend" href="https://it-trend.jp/">
                     <div class="tile__icon">
-                        <img class="tile" src="image/it-trend_24_24.png" alt="ITトレンド" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/it-trend_24_24.png" alt="ITトレンド" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>ITトレンド</span>
@@ -72,7 +72,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="list-finder" href="https://promote.list-finder.jp/">
                     <div class="tile__icon">
-                        <img src="image/list-finder_24_24.png" alt="list-finder" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/list-finder_24_24.png" alt="list-finder" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>List Finder</span>
@@ -80,7 +80,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="sales-doc" href="https://promote.sales-doc.com/lp/01/">
                     <div class="tile__icon">
-                        <img src="image/sales-doc_24_24.png" alt="sales-doc" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/sales-doc_24_24.png" alt="sales-doc" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Sales Doc</span>
@@ -88,7 +88,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="biz-play" href="https://biz-play.com/">
                     <div class="tile__icon">
-                        <img src="image/biz-play_24_24.png" alt="biz-play" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/biz-play_24_24.png" alt="biz-play" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>bizplay</span>
@@ -96,7 +96,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="innovation" href="https://www.innovation.co.jp/">
                     <div class="tile__icon">
-                        <img src="image/innovation_24_24.png" alt="Innovation" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/innovation_24_24.png" alt="Innovation" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Innovation</span>
@@ -104,7 +104,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="youtube" href="https://www.youtube.com/">
                     <div class="tile__icon">
-                        <img src="image/youtube_24_24.png" alt="youtube" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/youtube_24_24.png" alt="youtube" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Youtube</span>
@@ -112,7 +112,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="twitter" href="https://twitter.com/?lang=ja">
                     <div class="tile__icon">
-                        <img src="image/twitter_24_24.png" alt="twitter" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/twitter_24_24.png" alt="twitter" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Twitter</span>
@@ -120,7 +120,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="facebook" href="https://ja-jp.facebook.com/">
                     <div class="tile__icon">
-                        <img src="image/facebook_24_24.png" alt="facebook" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/facebook_24_24.png" alt="facebook" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Facebook</span>
@@ -128,7 +128,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="instagram" href="https://www.instagram.com/?hl=ja">
                     <div class="tile__icon">
-                        <img src="image/instagram_24_24.png" alt="instagram" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/instagram_24_24.png" alt="instagram" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>Instagram</span>
@@ -136,7 +136,7 @@ CSSはコンポーネントを意識したBEMで書かれていること（詳�
                 </a>
                 <a class="tile" title="line" href="https://line.me/ja/">
                     <div class="tile__icon">
-                        <img src="image/line_24_24.png" alt="line" width="24" height="24" loading="lazy">
+                        <img class="tile__icon__img" src="image/line_24_24.png" alt="line" width="24" height="24" loading="lazy">
                     </div>
                     <div class="tile__title">
                         <span>LINE</span>

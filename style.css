@@ -27,7 +27,7 @@
     text-align: center;
 }
 
-.top-img {
+.top-img .top-img__area {
     margin-bottom: 38px;
     display: inline-block;
 }
@@ -43,7 +43,7 @@
     margin-bottom: 20px;
 }
 
-.search-form .search-input {
+.search-form .search-form__input {
     height:45px;
     width: 40%;
     padding: 0 10px; 
@@ -54,7 +54,7 @@
     font-size: inherit;
 }
 
-.search-form .search-btn {
+.search-form .search-form__btn {
     height: 45px;
     position: absolute; 
     background: none;
@@ -64,12 +64,12 @@
     padding-left: 20px;
 }
 
-.search-form .search-btn:hover {
+.search-form .search-form__btn:hover {
     color:#7fbfff;
 }
 
 /* 検索ボタンのデザイン */
-.search-form .btn-submit {
+.search-form .search-form__submit {
     overflow: hidden;
     padding: 1.5rem 6rem;
     color: #FFD700;
@@ -83,7 +83,7 @@
     font-weight: bold;
 }
 
-.search-form .btn-submit:hover {
+.search-form .search-form__submit:hover {
     background:#f3eab8;
     color:#fff;
 }
@@ -92,7 +92,7 @@
 .container {
     column-count: 5;
     width: 40%;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 2px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -104,6 +104,7 @@
     color:#fff;
     border-radius: 7px;
     break-inside: avoid;
+    height: 100px;
 }
 
 .tile:hover {
@@ -116,10 +117,15 @@
     height: 48px;
     width: 48px;
     display: inline-block;
+    margin: 10% auto;
 }
 
 .tile .tile__title {
-    height: 50px;
     font-size: 14px;
     overflow: hidden;
+    margin: 5% auto;
+}
+
+.tile .tile__icon .tile__icon__img {
+    margin: 25% auto;
 }

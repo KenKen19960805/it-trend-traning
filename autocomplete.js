@@ -37,11 +37,11 @@ $(function() {
         },
     ];
     
-    $('#search-input').autocomplete({
+    $('#search-form__input').autocomplete({
         // autocompleteを表示し、選択されたvalueのmylinkを、$('#btn-submit')のhrefリンクに置き換える
         source: data,
         select: function(event, ui) {
-            $('#btn-submit').attr("href", (ui.item.mylink));
+            $('#search-form__submit').attr("href", (ui.item.mylink));
             return true;
         }
     })
