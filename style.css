@@ -1,0 +1,142 @@
+.body {
+    background: #35363A;
+    margin: 0;
+    min-width: 960px;
+    background-color: rgb(53, 54, 58);
+}
+
+.header {
+    padding: 8px;
+}
+
+.header-contents {
+    text-align: right; 
+    padding-right: 4px;
+}
+
+.header-contents .header-contents__icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    padding: 8px;
+}
+
+.contents {
+    text-align: center;
+}
+
+.top-img .top-img__area {
+    margin-bottom: 38px;
+    display: inline-block;
+}
+
+.top-img .top-img__area .top-img__area__img {
+    width: 272px;
+    height: 92px;
+}
+
+.search-box {
+    margin-bottom: 16px;
+    height: 100%;
+    position: relative;
+}
+
+.search-form {
+    position: relative;	
+    margin-bottom: 20px;
+}
+
+.search-form .search-form__input {
+    height:45px;
+    width: 40%;
+    padding: 0 10px; 
+    border-radius: 70px;
+    outline: 0;
+    border: none;
+    padding-inline-start: 50px;
+    font-size: inherit;
+}
+
+.search-form .search-form__btn {
+    height: 45px;
+    position: absolute; 
+    background: none;
+    color:#666;
+    border: none;
+    font-size: 15px;/*アイコンサイズ*/
+    padding-left: 20px;
+}
+
+.search-form .search-form__btn:hover {
+    color:#7fbfff;
+}
+
+/* 検索ボタンのデザイン */
+.search-form .search-form__submit {
+    overflow: hidden;
+    padding: 0.5rem 0.5rem;
+    color: #55595e;
+    border-radius: 7px;
+    background: #f0f3f4;
+    display: block;
+    width: 20%;
+    margin: 20px auto;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.search-form .search-form__submit:hover {
+    background: #000;
+    color: #fff;
+}
+
+.search-form .search-form__submit:active {
+    top: 2px;
+    color: transparent;
+}
+
+/* オススメリンク */
+.container {
+    column-count: 5;
+    width: 40%;
+    margin: 30px auto;
+    padding: 2px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.tile {
+    display: block;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 7px;
+    break-inside: avoid;
+    height: 100px;
+}
+
+.tile:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.tile .tile__icon {
+    border-radius: 50%;
+    background-color: rgba(32, 33, 36, 1);
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    margin: 10% auto;
+}
+
+.tile .tile__title {
+    font-size: 14px;
+    overflow: hidden;
+    margin: 5% auto;
+}
+
+.tile .tile__icon .tile__icon__img {
+    margin: 25% auto;
+}
