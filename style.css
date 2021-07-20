@@ -32,6 +32,11 @@
     display: inline-block;
 }
 
+.top-img .top-img__area .top-img__area__img {
+    width: 272px;
+    height: 92px;
+}
+
 .search-box {
     margin-bottom: 16px;
     height: 100%;
@@ -71,21 +76,27 @@
 /* 検索ボタンのデザイン */
 .search-form .search-form__submit {
     overflow: hidden;
-    padding: 1.5rem 6rem;
-    color: #FFD700;
-    border: solid 3px #FFD700;
+    padding: 0.5rem 0.5rem;
+    color: #55595e;
     border-radius: 7px;
-    background: #35363A;
+    background: #f0f3f4;
     display: block;
-    width: 30%;
+    width: 20%;
     margin: 20px auto;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .search-form .search-form__submit:hover {
-    background:#f3eab8;
-    color:#fff;
+    background: #000;
+    color: #fff;
+}
+
+.search-form .search-form__submit:active {
+    top: 2px;
+    color: transparent;
 }
 
 /* オススメリンク */
